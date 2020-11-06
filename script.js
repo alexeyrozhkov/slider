@@ -1,10 +1,11 @@
-const imgWidth = 220;
+const imgWidth = 420;
 const ul = document.querySelector('.inner-lists');
 const buttonRight = document.querySelector(".right");
 const buttonLeft = document.querySelector(".left");
 const lis = document.querySelectorAll('.inner-list');
 const SLIDES_TOTAL = lis.length;
 const SLIDES_COUNT = 1;
+const circles = document.querySelectorAll('.circle');
 
 buttonLeft.onclick = function() {
     const currentMarginLeft = parseInt(ul.style.marginLeft);
@@ -23,7 +24,7 @@ buttonRight.onclick = function() {
     const currentMarginLeft = parseInt(ul.style.marginLeft);
     buttonLeft.removeAttribute("disabled", "disabled");
     buttonLeft.classList.remove('disabled');
-    if (currentMarginLeft <= (SLIDES_TOTAL - SLIDES_COUNT) * -220) {
+    if (currentMarginLeft <= (SLIDES_TOTAL - SLIDES_COUNT) * -420) {
         buttonRight.setAttribute("disabled", "disabled"); 
         buttonRight.classList.add('disabled');
        return;

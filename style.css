@@ -3,7 +3,7 @@
     position: relative;
     margin: auto;
     margin-top: 50px;
-    width:290px;
+    width:480px;
 }
 .arrow {
     position: absolute;
@@ -13,7 +13,7 @@
     padding-right: 5px;
     box-sizing: border-box;
     font-size: 17px;
-    border: 2px solid black;
+    border: none;
     color: black;
     
 }
@@ -25,22 +25,22 @@
     outline: none;
 }
 .left {
-    top: 100px;
+    top: 150px;
  }
 .right {
-    top:100px;
-    left:250px;
+    top:150px;
+    left:445px;
 }
 
 .inner {
-    width: 220px;
+    width: 400px;
     overflow: hidden;
     margin-left: 35px;
 }
 
 .inner-lists {
     display: flex;
-    height: 200px;
+    height: 350px;
     width: 9999px;
     margin: 0;
     padding: 0;
